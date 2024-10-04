@@ -435,12 +435,6 @@ img:hover{
     cursor: default;
 
 }
-.fotoPerfil{
-    height: 300px;
-    width: 300px;
-    border-radius: 100%;
-    object-fit: cover;
-}
 .project-img{
     width: 100%;
     height: auto;
