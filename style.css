@@ -431,12 +431,31 @@ footer {
 footer p {
   text-align: center;
 }
-img:hover{
-    cursor: default;
-
-}
 
 .project-img{
     width: 100%;
     height: auto;
+}
+#extra {
+  color: transparent;
+  background-image: linear-gradient(to right, rgb(90, 90, 213), rgb(213, 90, 213));
+  background-clip: text;
+  -webkit-background-clip: text; 
+  text-decoration: none; 
+  position: relative;
+  display: inline-block; 
+}#extra::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem; 
+  width: 100%;
+  height: 2px; 
+  background-image: linear-gradient(to right, rgb(90, 90, 213), rgb(213, 90, 213));
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+#extra:hover::after {
+  transform: scaleX(1); 
 }
